@@ -2,7 +2,7 @@
 
 An [Agent Skill](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) that turns a long markdown document into a single-file HTML explorable explanation — scroll-snapped scenes, hand-written SVG, vanilla CSS/JS, no build step.
 
-Hand it research, a project plan, a methodology writeup, a history piece, or a design exploration whose ideas are visual, temporal, spatial, causal, or comparative — i.e., where prose is forcing the reader to reconstruct structure that the machine could render directly. The skill walks through seven phases (plan → voice calibration → aesthetic direction → content structuring → copy → interaction design → build → review) and produces one self-contained `.html` file that runs identically in `file://`, Claude Artifacts, and on static hosting.
+Hand it research, a project plan, a methodology writeup, a history piece, or a design exploration whose ideas are visual, temporal, spatial, causal, or comparative — i.e., where prose is forcing the reader to reconstruct structure that the machine could render directly. The skill walks through seven phases (plan → aesthetic direction → content structuring → copy → interaction design → build → review) and produces one self-contained `.html` file that runs identically in `file://`, Claude Artifacts, and on static hosting.
 
 ## What it covers
 
