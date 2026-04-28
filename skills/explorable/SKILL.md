@@ -39,7 +39,7 @@ Runs identically in `file://`, Claude Artifacts, and on static hosting.
 This skill is self-contained. Four files, all in this directory:
 
 - **SKILL.md** (this file) — phase scaffold, decision logic, hard rules. Loaded every invocation.
-- **writing.md** — full Zinsser canon, walk-through voice, copy procedures (`sample`, `review`). Read before Phase 1.5 and Phase 4.
+- **writing.md** — full Zinsser canon, walk-through voice, copy procedures (`sample`, `review`). Read before Phase 1's voice sample and Phase 4's Zinsser pass.
 - **aesthetics.md** — source-genre starting patterns, anti-slop filter, color-stable variables. Read before Phase 2.
 - **primitives.md** — interactive primitives table, teaching test with worked examples, predict-then-reveal evidence, defaults. Read before Phase 5.
 
@@ -79,17 +79,23 @@ Preserve voice, specifics (dates, names, hashes, quotes, numbers),
 deliberate fragments, and the source author's distinctive rhythm. Make it
 easier to read without making it dumber.
 
-**writing.md holds the full canon.** Read it before Phase 1.5 and before Phase 4.
+**writing.md holds the full canon.** Read it before Phase 1 and before Phase 4.
 
 ---
 
-## Phase 1 — Plan the piece, confirm in one line
+## Phase 1 — Plan the piece and the voice, confirm in one line
 
 Read the source completely. Find the structure trapped inside the prose:
 temporal, spatial, causal, comparative, procedural, branching, taxonomic,
 evidentiary. Most pieces have one dominant shape and one or two secondary.
 
-Then propose the plan to the user — plain language, one screen, no jargon.
+Generate one voice sample at the target tone — run the writing.md `sample`
+procedure on the source's first paragraph. Skip the sample for quick
+internal artifacts under 1500 words.
+
+Then propose the plan AND the voice sample to the user in one screen,
+plain language, no jargon. **One confirmation gate, not two** — the user
+redirects either the plan or the voice in a single line.
 
 *A Phase 1 proposal might read:*
 
@@ -103,7 +109,12 @@ Then propose the plan to the user — plain language, one screen, no jargon.
 >
 > Look and feel: warm picture-book colors on cream paper, hand-drawn marks.
 >
-> Say "go" or change anything.
+> Voice sample (your first paragraph at the target tone):
+>
+> *[rewritten paragraph appears here]*
+>
+> Say "go" or change anything — different shape, more/less playful,
+> warmer/colder voice, drop a scene.
 
 ### Default modes by source
 
@@ -174,20 +185,6 @@ Translation table:
 | scaffolding interactive | "this one makes the piece easier to navigate" |
 | density budget | "N interactive moments" |
 | five-gate review | "a few checks before we ship" |
-
----
-
-## Phase 1.5 — Voice calibration
-
-Generate one sample paragraph at the target tone. Show it with a one-line
-frame:
-
-> "Voice sample. Say 'go' or name a shift (warmer / colder / more Zinsser /
-> less clinical / more playful / less playful)."
-
-**Run the writing.md `sample` procedure on the first paragraph of the source.**
-
-Skip this step for quick internal artifacts under 1500 words.
 
 ---
 
@@ -431,12 +428,12 @@ A clean 12-word piece beats a bloated prose shell.
 Execution mode. The skill builds, doesn't discuss.
 
 Right: "Reading this as a research synthesis with a temporal arc. Building
-a chaptered walkthrough with a 3-up comparison scrubber. Voice sample
-coming next."
+a chaptered walkthrough with a 3-up comparison scrubber. Plan and voice
+sample below — say go or redirect."
 
 Wrong: "Great, let me start by reading the source. Phase 1: I'll identify
-the structure. I see this is a research synthesis with a temporal arc. Now
-moving to Phase 1.5 — voice calibration..."
+the structure. I see this is a research synthesis with a temporal arc.
+Now generating the voice sample..."
 
 ---
 

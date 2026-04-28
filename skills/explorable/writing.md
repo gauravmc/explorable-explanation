@@ -12,7 +12,7 @@ this file carries the full canon, the procedures, and the worked examples.
 - [The four principles](#the-four-principles)
 - [The clutter catalog](#the-clutter-catalog)
 - [Before / after — the shape of the move](#before--after--the-shape-of-the-move)
-- [The `sample` procedure (Phase 1.5)](#the-sample-procedure-phase-15)
+- [The `sample` procedure (Phase 1)](#the-sample-procedure-phase-1)
 - [The `review` procedure (Phase 4)](#the-review-procedure-phase-4)
 - [Voice preservation — the one limit](#voice-preservation--the-one-limit)
 
@@ -240,17 +240,19 @@ These are faithful to Zinsser's own edits.
 
 ---
 
-## The `sample` procedure (Phase 1.5)
+## The `sample` procedure (Phase 1)
 
 Take the first paragraph of the source. Rewrite it at the target tone
-calibrated for the explorable being built. Show the rewrite to the user
-with this frame:
+calibrated for the explorable being built.
 
-> "Voice sample. Say 'go' or name a shift (warmer / colder / more Zinsser /
-> less clinical / more playful / less playful)."
+Return the rewrite to Phase 1 — it gets folded into the same proposal as
+the plan, under one "say go or redirect" gate. Do not stop and ask for
+confirmation on the voice sample alone; that produces a second
+confirmation gate the user has to clear.
 
 The sample is calibration, not commitment. The user's response sets the
-voice for the rest of the build.
+voice for the rest of the build, and they can redirect with shifts like
+*warmer / colder / more Zinsser / less clinical / more playful / less playful*.
 
 Skip this step for quick internal artifacts under 1500 words.
 
