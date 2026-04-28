@@ -1,5 +1,6 @@
 ---
 name: explorable
+version: 0.2.0
 description: Turns a long markdown document into a single-file HTML explorable — scroll-snapped scenes, hand-written SVG, interactive widgets where the source has structure trapped inside the prose. One file, no build step, vanilla CSS/JS/SVG. Use when the user says "make this explorable", "/explorable", "turn this into an interactive", "render this research", or has a long markdown doc whose ideas are visual, temporal, spatial, causal, or comparative. Descends from Bret Victor's Explorable Explanations, Nicky Case, Distill, Ciechanowski, Sam Rose, Red Blob Games.
 license: Complete terms in LICENSE.txt
 allowed-tools:
@@ -449,5 +450,6 @@ moving to Phase 1.5 — voice calibration..."
 - Bartosz Ciechanowski, ciechanow.ski — auteur ceiling
 - Sam Rose, samwho.dev — realistic agent ceiling
 - Red Blob Games, redblobgames.com — incremental interactivity
+- Andy Matuschak + Michael Nielsen, *Quantum Country* — predict-then-reveal as the load-bearing primitive
 - Jakub Krehel, *Details that make interfaces feel better* — essay+skill pair
 - William Zinsser, *On Writing Well* — copy rubric
