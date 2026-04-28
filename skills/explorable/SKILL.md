@@ -1,22 +1,7 @@
 ---
 name: explorable
-description: |
-  Turns a long markdown document (research, plan, methodology, technical
-  writeup, history, design exploration) into a single-file HTML
-  explorable — scroll-snapped scenes, hand-written SVG, interactive
-  widgets where the source has structure trapped inside the prose. One
-  file, no build step, vanilla CSS/JS/SVG.
-
-  Use this skill when the user says "make this explorable", "/explorable",
-  "turn this into an interactive", "render this research", "build a
-  walkthrough", "visualize this", or has a long markdown doc whose ideas
-  are visual, temporal, spatial, causal, or comparative — i.e., where
-  prose is forcing the reader to reconstruct structure that the machine
-  could render directly.
-
-  Descends from Bret Victor's Explorable Explanations (2011), Nicky Case's
-  playable essays at explorabl.es, Distill, and the independent auteur
-  tradition (Ciechanowski, Sam Rose, Red Blob Games).
+description: Turns a long markdown document into a single-file HTML explorable — scroll-snapped scenes, hand-written SVG, interactive widgets where the source has structure trapped inside the prose. One file, no build step, vanilla CSS/JS/SVG. Use when the user says "make this explorable", "/explorable", "turn this into an interactive", "render this research", or has a long markdown doc whose ideas are visual, temporal, spatial, causal, or comparative. Descends from Bret Victor's Explorable Explanations, Nicky Case, Distill, Ciechanowski, Sam Rose, Red Blob Games.
+license: Complete terms in LICENSE.txt
 allowed-tools:
   - Read
   - Write
@@ -49,6 +34,17 @@ hand-written SVG, interactive widgets where the source has kinetic
 structure, deliberate aesthetic, voice tuned to the source. No build step.
 Runs identically in `file://`, Claude Artifacts, and on static hosting.
 
+## Files in this skill
+
+This skill is self-contained. Four files, all in this directory:
+
+- **SKILL.md** (this file) — phase scaffold, decision logic, hard rules. Loaded every invocation.
+- **writing.md** — full Zinsser canon, walk-through voice, copy procedures (`sample`, `review`). Read before Phase 1.5 and Phase 4.
+- **aesthetics.md** — source-genre starting patterns, anti-slop filter, color-stable variables. Read before Phase 2.
+- **primitives.md** — interactive primitives table, teaching test with worked examples, predict-then-reveal evidence, defaults. Read before Phase 5.
+
+Pointers below are imperative ("**read X**"). Treat them as instructions, not suggestions.
+
 ## Genre is the ceiling
 
 The input's genre caps the output's interactive density. A founder letter
@@ -68,54 +64,22 @@ Density section below.
 
 ## Writing standard (applies throughout)
 
-Every phase that produces text follows Zinsser's four principles —
-clarity, simplicity, brevity, humanity. The governing test for every
-sentence: is it doing new work? If not, cut it.
+Every phase that produces text — body prose, figure captions, scene
+transitions, button labels, error messages — follows Zinsser's four
+principles: clarity, simplicity, brevity, humanity. The governing test
+for every sentence: **is this sentence doing new work?** If not, cut it.
 
-### Walk-through voice
+The three LLM-tics most likely to leak into agent-generated copy:
 
-An explorable walks the reader through. Ground domain vocabulary on
-first use — an example, a plain gloss, a concrete scene.
+- **Hedges** — "a bit", "sort of", "arguably", "perhaps". Either claim or cut the sentence.
+- **Throat-clearing openers** — "It's interesting to note that…", "At this point in time…". Cut the opener; start with the sentence.
+- **Passive voice when actor is known** — "was deleted by Jorge" → "Jorge deleted".
 
-**Bad:** "Commit archaeology is the systematic analysis of version-control
-history."
+Preserve voice, specifics (dates, names, hashes, quotes, numbers),
+deliberate fragments, and the source author's distinctive rhythm. Make it
+easier to read without making it dumber.
 
-**Better:** "A git log tells you what changed. Commit archaeology asks the
-better question: what was the story of the work?"
-
-Diagnostic: hand the draft to someone who hasn't read the source. If a
-paragraph assumes a term you haven't grounded, ground it.
-
-### Cut on sight
-
-| Pattern | Replace with |
-|---|---|
-| Hedges: "a bit", "sort of", "arguably", "perhaps" | Either claim or cut the sentence |
-| Throat-clearing: "It's interesting to note...", "At this point in time..." | The sentence after it |
-| "utilize" | "use" |
-| "implement" | "build" / "do" / "ship" |
-| "leverage" (unless it means actual financial leverage) | name the thing being used |
-| "facilitate" | use the more specific verb (help, speed, enable, host) |
-| Vague evaluative adjectives: "robust", "comprehensive", "seamless" | name the actual quality (strength, scope, where the seams are) or cut |
-| "made a decision to" | "decided" |
-| "the implementation of X" | "X" |
-| Passive when actor is known: "was deleted by Jorge" | "Jorge deleted" |
-| LLM-tics: "as we'll see", "let's dive in", "buckle up", "in today's rapidly evolving landscape", "a nuanced understanding of" | cut. If cutting breaks flow, rewrite the surrounding sentence to remove the need for the tic — don't just snip. |
-
-Preserve: voice, specifics (dates, names, hashes, quotes, numbers),
-deliberate fragments, the source author's rhythm and vivid details.
-Make it easier to read without making it dumber.
-
-If `/zinsser` is available, invoke `/zinsser review` on the full draft for
-a rigorous sentence-level pass after Phase 4. Otherwise apply the table
-above inline.
-
-### Paragraph job test
-
-Each paragraph does at least one of: orient the reader, explain a claim,
-ground an abstraction, introduce an interaction, interpret what changed,
-surface an assumption, create momentum, preserve a vivid detail. If it
-does none, cut it.
+**writing.md holds the full canon.** Read it before Phase 1.5 and before Phase 4.
 
 ---
 
@@ -221,8 +185,7 @@ frame:
 > "Voice sample. Say 'go' or name a shift (warmer / colder / more Zinsser /
 > less clinical / more playful / less playful)."
 
-If `/zinsser` is available, invoke `/zinsser sample` on the first paragraph
-of the source. Otherwise generate inline.
+**Run the writing.md `sample` procedure on the first paragraph of the source.**
 
 Skip this step for quick internal artifacts under 1500 words.
 
@@ -251,55 +214,13 @@ already telling you about its visual world:
 - **Audience.** Who would naturally read this, and what media do they
   already consume? Design for that reader, not a generic "tasteful website."
 
-*Some starting patterns:*
-
-- Children's iPad app → playful, generous, hand-drawn marks, warm
-  palette, picture-book cadence
-- Scientific research synthesis → archival, restrained, serif body,
-  numbered figures, generous white space
-- Security post-mortem → brutalist, monospace where it earns it, high
-  contrast, no decorative warmth
-- Founder letter → editorial, single-column, drop caps if the prose
-  warrants, restrained color
-- Code archaeology / repo retrospective → terminal-archive hybrid, mono
-  accents, timestamp typography, log-style margins
-- Civics / history learning doc → archival but alive, period-aware
-  palette without pastiche, real sources visible
-- Investment thesis → understated, precise, financial-press typography,
-  no dashboard glam
-
 The principle: a reader landing cold should be able to guess the topic
-from the visual language alone. The skill chooses the palette, fonts, and
-aesthetic moves; the example block is a starting pattern, not a menu to
-pick from.
+from the visual language alone.
 
-### Anti-slop filter (apply before any design generation)
-
-Banned defaults — every one of these reads as AI slop:
-
-- Fonts: Inter, Roboto, Arial, Fraunces, Space Grotesk, system-ui as
-  automatic default
-- Gradient backgrounds, glassmorphism, default purple-blue SaaS palette
-- Emoji as decoration
-- Left-border Notion cards
-- Margin asides that don't add information not in the main text
-- Cookie consent modals, sign-in gates, fake CTAs
-- Decorative icons that carry no meaning
-- Auto-generated hero art with no teaching role
-- Every section starting with "In today's…" or "It's important to note…"
-
-Usually 2–3 fonts (display + body, plus mono if metadata is present). A
-fourth earns its place if the subject genuinely calls for a hand-written
-accent.
-
-### Color-stable variables
-
-Each named quantity in the piece gets a color at first introduction. That
-color is reused in every subsequent widget, in inline math, and as the
-stroke color in diagrams.
-
-This single discipline does most of the work of "looking like a real
-explainer."
+**Read aesthetics.md before generating any design.** It carries the
+source-genre starting patterns, the anti-slop filter (banned defaults),
+and the color-stable-variables discipline that does most of the work of
+"looking like a real explainer."
 
 ---
 
@@ -326,11 +247,10 @@ passes, in order:
    No widgets yet — write what each scene says. Body prose, headings, figure
    captions, scene transitions.
 2. **Ground the vocabulary.** For each domain term, is it grounded on
-   first use? See Walk-through voice above. Cutting can't add missing
-   context, so do this before Zinsser.
-3. **Zinsser pass.** Invoke `/zinsser review` on the full draft. Apply the
-   rewrites before Phase 5. Fall back to the cut-on-sight table above if
-   the skill isn't available.
+   first use? See the walk-through voice section in writing.md. Cutting
+   can't add missing context, so do this before the Zinsser pass.
+3. **Zinsser pass.** **Run the writing.md `review` procedure on the full draft.**
+   Apply the rewrites before Phase 5.
 
 ---
 
@@ -359,55 +279,12 @@ Exception: when the thesis is about causality, responsiveness, or
 transformation, interaction is mandatory — you can't argue responsiveness
 typographically.
 
-### Primitives
-
-| Primitive | Claim it carries |
-|---|---|
-| Inline scrubbable number | "If x changes, y follows" — quantitative prose |
-| Slider + reactive view | Continuous parameter sweep |
-| Step-through / paginated | Argument unfolds in stages |
-| Click-to-act | Discrete choice has a consequence |
-| Drag-to-position | Spatial relation matters |
-| Drag-to-target | Reach a state |
-| Drawable canvas | The reader's input becomes the example |
-| Auto-running simulation | The system's behavior IS the teaching |
-| Comparison scrubber | Before/after differs here |
-| Layer toggle | Hidden structure can be revealed |
-| Timeline scrubber | Time changes structure |
-| Map pan / zoom / filter | Geography or distribution matters |
-| Branching path | Choices have consequences |
-| Sort / filter / search | A corpus has patterns |
-| Annotated artifact | Read this object with guidance |
-| ⭐ **Predict-then-reveal** | Counter-intuitive result; commit before reveal |
-| Mnemonic card | Retention required (hand off to Orbit if user goal = remember) |
-| Exploded diagram | A system has parts |
-| Flow simulator | Things move through a process |
-| Trade-off frontier | Competing constraints |
-| Hover / tap for detail | Overview first, dig in |
-
-Prefer fewer primitives used well over a buffet used badly. The source
-dictates the count, not a target range — see Density.
-
-**Predict-then-reveal** has strong empirical support in the learning
-sciences (the pretesting effect; Quantum Country's spaced-repetition
-prompts; the NYT *You Draw It* line). Reach for it whenever the source
-has a counter-intuitive claim. It's underused.
-
-### Interactive defaults
-
-- Auto-preview on first scroll-in, cancelable on user click. Duration fits
-  the widget (toggle ~1s, scene redraw ~3s, slow simulation longer).
-- Reset button on sandbox widgets that can reach broken states.
-- Pause on auto-animating elements.
-- `prefers-reduced-motion` respected — ambient motion off, thesis-carrying
-  motion paused-by-default.
-- One variable → one output by default. Multi-variable widgets keep presets
-  so the reader has a way in.
-- Accordions default one item open. All-closed reads as decoration —
-  the reader has no visible action on arrival.
-- When motion is the explanation, animate. Otherwise don't. A sweep
-  through valid model states is teaching. A morph between images is
-  decoration.
+**Read primitives.md before designing interactions.** It carries the full
+primitives table (22 patterns and the claim each carries), worked examples
+of the teaching test, the predict-then-reveal evidence, and the defaults
+every widget must respect (auto-preview, reset, pause,
+`prefers-reduced-motion`, single-variable default, accordion behavior,
+motion-as-explanation).
 
 ---
 
@@ -471,17 +348,6 @@ For model-backed widgets:
 - Label illustrative simulations as illustrative
 - No forecast voice unless the source supports it
 
-### Lean into the medium
-
-HTML, vanilla CSS, vanilla JS, hand-written SVG are the strengths of this
-stack. Use them. A purposeful SVG scene, a CSS-only transition, a short
-script that redraws a figure — first-class teaching tools, not fallbacks.
-
-Bret Victor's *Scrubbing Calculator*, Nicky Case's *Polygons*, Jez Swanson's
-*Fourier*, Ciechanowski's *Mechanical Watch*, Red Blob's *A**, Sam Rose's
-*Load Balancing* — all hand-built. None used production illustration
-assets. Craft in the markup is the aesthetic.
-
 ---
 
 ## Phase 7 — Review
@@ -493,7 +359,7 @@ assets. Craft in the markup is the aesthetic.
 | 1. Static | Syntax, var refs, tag balance | Yes |
 | 2. Visual | Layout at 1440 and 640, no clipping | Partial |
 | 3. Design | Aesthetic deliberate, not default | No — user |
-| 4. Copy | Each paragraph teaches | No — user or `/zinsser` |
+| 4. Copy | Each paragraph teaches | No — user or writing.md `review` |
 | 5. Arc | Narrative arc visible to a first-time reader | No — user |
 
 Plus three honesty checks (always run):
