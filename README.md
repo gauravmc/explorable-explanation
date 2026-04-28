@@ -19,13 +19,13 @@ Hand it research, a project plan, a methodology writeup, a history piece, or a d
 ## Installation
 
 ```bash
-npx skills add <github-handle>/explorable
+npx skills add gauravmc/explorable
 ```
 
 Or install manually for Claude Code by cloning into `~/.claude/skills/`:
 
 ```bash
-git clone https://github.com/<github-handle>/explorable.git
+git clone https://github.com/gauravmc/explorable.git
 cp -r explorable/skills/explorable ~/.claude/skills/explorable
 ```
 
@@ -66,4 +66,4 @@ MIT — see [LICENSE.txt](LICENSE.txt).
 
 ## Author
 
-Gaurav Chande — [github.com/&lt;github-handle&gt;](https://github.com/&lt;github-handle&gt;)
+Gaurav Chande — [github.com/gauravmc](https://github.com/gauravmc)
