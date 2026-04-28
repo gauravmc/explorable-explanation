@@ -280,7 +280,7 @@ transformation, interaction is mandatory — you can't argue responsiveness
 typographically.
 
 **Read primitives.md before designing interactions.** It carries the full
-primitives table (22 patterns and the claim each carries), worked examples
+primitives table (21 patterns and the claim each carries), worked examples
 of the teaching test, the predict-then-reveal evidence, and the defaults
 every widget must respect (auto-preview, reset, pause,
 `prefers-reduced-motion`, single-variable default, accordion behavior,

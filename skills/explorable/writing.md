@@ -1,8 +1,3 @@
----
-name: explorable-writing
-description: Copy procedures for /explorable. Walk-through voice, paragraph job test, the Zinsser canon (clutter catalog + before/after examples), and the `sample` and `review` procedures Phase 1.5 and Phase 4 call.
----
-
 # Writing — copy procedures for /explorable
 
 Every phase of /explorable that produces text — body prose, figure captions,

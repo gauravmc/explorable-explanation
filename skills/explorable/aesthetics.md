@@ -1,8 +1,3 @@
----
-name: explorable-aesthetics
-description: Visual-direction reference for /explorable. Source-genre starting patterns, anti-slop filter, color-stable variables. Phase 2 reads this before generating any design.
----
-
 # Aesthetics — visual direction reference
 
 Phase 2 of /explorable reads this file before generating any design. SKILL.md
@@ -85,7 +80,7 @@ don't add information not in the main text. Left-border Notion cards.
 explorable is the artifact, not a marketing page.
 
 **Copy.** Every section starting with "In today's…" or "It's important to
-note…" — see [writing.md](writing.md) for the LLM-tic catalog.
+note…" — kill on sight. The full LLM-tic catalog is in writing.md.
 
 **Font count.** Usually 2–3 fonts (display + body, plus mono if metadata is
 present). A fourth earns its place only if the subject genuinely calls

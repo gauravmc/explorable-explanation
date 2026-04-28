@@ -1,8 +1,3 @@
----
-name: explorable-primitives
-description: Interactive-primitives reference for /explorable. Full primitive table, the teaching test, predict-then-reveal evidence, and the defaults every interactive widget must respect. Phase 5 reads this before designing interactions.
----
-
 # Primitives — interactive design reference
 
 Phase 5 of /explorable reads this file before designing any interaction.
@@ -176,3 +171,21 @@ When motion IS the explanation, animate. Otherwise don't.
 
 The bar: if removing the motion removes information, keep it. If removing
 the motion makes the page calmer without losing meaning, cut it.
+
+---
+
+## Reference implementations to study
+
+Each of these is hand-built — no production illustration assets, no
+generated raster, no framework. Craft in the markup is the aesthetic.
+
+| Project | Author | Primitives it demonstrates |
+|---|---|---|
+| *Scrubbing Calculator* | Bret Victor | inline scrubbable number |
+| *Parable of the Polygons* | Vi Hart + Nicky Case | click-to-act, auto-running simulation |
+| *An Interactive Introduction to Fourier Transforms* | Jez Swanson | slider + reactive view |
+| *Mechanical Watch* | Bartosz Ciechanowski | exploded diagram, layer toggle |
+| *Introduction to A** | Red Blob Games | step-through, auto-running simulation |
+| *Load Balancing* | Sam Rose | auto-running simulation, predict-then-reveal |
+
+Read the markup. The pattern is the teaching.

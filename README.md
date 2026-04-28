@@ -11,7 +11,7 @@ Hand it research, a project plan, a methodology writeup, a history piece, or a d
 - A copy discipline drawn from Zinsser's *On Writing Well* — full clutter catalog, walk-through voice, paragraph job test, before/after examples
 - An anti-slop filter and source-genre starting patterns for visual direction
 - Color-stable variables: each named quantity gets a color, reused across widgets, diagrams, and inline math
-- 22 interactive primitives, each labelled with the claim it carries, plus a teaching test for separating thesis-carrying interactions from scaffolding
+- 21 interactive primitives, each labelled with the claim it carries, plus a teaching test for separating thesis-carrying interactions from scaffolding
 - Predict-then-reveal as the underused primitive (pretesting effect, Quantum Country, NYT *You Draw It*)
 - Build rules: vanilla HTML/CSS/JS + hand-written SVG, single file, pinned CDN deps, accessible defaults, `prefers-reduced-motion`, no fake data, no invented citations
 - A five-gate review and an optional fork review for higher-stakes pieces
