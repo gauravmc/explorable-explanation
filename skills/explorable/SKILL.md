@@ -53,8 +53,8 @@ synthesis won't become Ciechanowski's *Mechanical Watch* in one pass.
 Name this honestly instead of overselling.
 
 The realistic agent ceiling for one-shot output is **Sam Rose / Red Blob
-Games quality**: vivid palette, hand-written SVG, prose that earns its
-place, widgets where the source genuinely calls for them. Aim for that.
+Games quality**: color-stable palette, hand-written SVG, prose that earns
+its place, widgets where the source genuinely calls for them. Aim for that.
 Ciechanowski's auteur level is unattainable in one pass.
 
 The source dictates how many widgets, not a target range — see the

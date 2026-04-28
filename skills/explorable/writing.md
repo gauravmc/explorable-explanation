@@ -133,7 +133,6 @@ Cut the opener. Start with the sentence.
 | prioritize | put first |
 | finalize | finish |
 | utilize | use |
-| leverage (unless actual financial leverage) | name the thing being used |
 
 ### Concept nouns (nominalizations)
 

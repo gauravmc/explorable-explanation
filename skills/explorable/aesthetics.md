@@ -17,8 +17,20 @@ discipline that does most of the work.
 
 A reader landing cold should be able to guess the topic from the visual
 language alone. Each subject genre has an established register that readers
-already know how to read. Use these as starting patterns, not menus to pick
-from — the source can override.
+already know how to read. Read the source for what it's already telling
+you about its visual world:
+
+- **Subject genre.** Children's product, scientific research, founder essay,
+  code archaeology, civics, design critique, financial memo, art history.
+  Each has a register readers already know.
+- **Named visual referents.** Colors ("Purple Crayon" → Harold's purple),
+  objects, cultural references, era, brand identity. If the source names
+  something visual, it's load-bearing — use it.
+- **Tone.** Playful, austere, journalistic, intimate, technical. Match it.
+- **Audience.** Who would naturally read this, and what media do they
+  already consume? Design for that reader, not a generic "tasteful website."
+
+Some starting patterns by subject:
 
 - **Children's iPad app** → playful, generous, hand-drawn marks, warm
   palette, picture-book cadence
@@ -39,21 +51,8 @@ from — the source can override.
 - **Design exploration** → catalog-page logic, side-by-side, captions
   doing real work, type as evidence
 
-The principle: read the source for what it's already telling you about its
-visual world.
-
-- **Subject genre.** Children's product, scientific research, founder essay,
-  code archaeology, civics, design critique, financial memo, art history.
-  Each has a register readers already know.
-- **Named visual referents.** Colors ("Purple Crayon" → Harold's purple),
-  objects, cultural references, era, brand identity. If the source names
-  something visual, it's load-bearing — use it.
-- **Tone.** Playful, austere, journalistic, intimate, technical. Match it.
-- **Audience.** Who would naturally read this, and what media do they
-  already consume? Design for that reader, not a generic "tasteful website."
-
-The skill chooses the palette, fonts, and aesthetic moves; the list above
-is a starting pattern, not a menu.
+The skill chooses the palette, fonts, and aesthetic moves; the patterns
+above are starting points, not menus.
 
 ---
 
@@ -63,9 +62,9 @@ Apply before any design generation. Every one of these reads as AI slop.
 
 **Fonts.** Inter, Roboto, Arial, Fraunces, Space Grotesk, system-ui as
 automatic default. Pick something with character that fits the source's
-register — distinctive display fonts, opinionated body fonts. A fourth
-font earns its place only if the subject genuinely calls for a hand-written
-accent.
+register — distinctive display fonts, opinionated body fonts. Usually 2–3
+fonts (display + body, plus mono if metadata is present). A fourth earns
+its place only if the subject genuinely calls for a hand-written accent.
 
 **Color.** Default purple-blue SaaS palette, gradient backgrounds applied
 out of habit, glassmorphism. Commit to a cohesive palette derived from the
@@ -75,16 +74,11 @@ distributed palettes.
 **Decoration.** Emoji as decoration. Decorative icons that carry no
 meaning. Auto-generated hero art with no teaching role. Margin asides that
 don't add information not in the main text. Left-border Notion cards.
-
-**Pattern matter.** Cookie consent modals, sign-in gates, fake CTAs — the
-explorable is the artifact, not a marketing page.
+Cookie consent modals, sign-in gates, fake CTAs — the explorable is the
+artifact, not a marketing page.
 
 **Copy.** Every section starting with "In today's…" or "It's important to
 note…" — kill on sight. The full LLM-tic catalog is in writing.md.
-
-**Font count.** Usually 2–3 fonts (display + body, plus mono if metadata is
-present). A fourth earns its place only if the subject genuinely calls
-for a hand-written accent.
 
 ---
 
