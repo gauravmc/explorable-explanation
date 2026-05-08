@@ -19,14 +19,14 @@ Hand it research, a project plan, a methodology writeup, a history piece, or a d
 ## Installation
 
 ```bash
-npx skills add gauravmc/explorable
+npx skills add gmchande/explorable-skills
 ```
 
 Or install manually for Claude Code by cloning into `~/.claude/skills/`:
 
 ```bash
-git clone https://github.com/gauravmc/explorable.git
-cp -r explorable/skills/explorable ~/.claude/skills/explorable
+git clone https://github.com/gmchande/explorable-skills.git
+cp -r explorable-skills/skills/explorable ~/.claude/skills/explorable
 ```
 
 ## Usage

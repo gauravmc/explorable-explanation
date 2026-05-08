@@ -101,6 +101,7 @@ Implementation:
 - The reader learns the color-to-quantity mapping once and reads diagrams
   faster from then on.
 
-Bret Victor's *Scrubbing Calculator* and Bartosz Ciechanowski's pieces
-are the canonical examples. Color-stable variables are the difference
-between "an explainer with charts" and "an explainer that teaches."
+Distill's neural-network essays (Chris Olah et al.) and Bartosz
+Ciechanowski's pieces are the canonical examples. Color-stable variables
+are the difference between "an explainer with charts" and "an explainer
+that teaches."

@@ -58,9 +58,8 @@ dead motion.
 
 **Strong examples:**
 
-- "The reader changes the **infection rate** to understand **why curve flattening matters**." (Nicky Case, *Polygons*-style)
 - "The reader changes the **friend's bias threshold** to understand **how segregation emerges from mild preferences**." (Nicky Case, *Parable of the Polygons*)
-- "The reader changes the **time of day** to understand **how the watch's escapement releases energy**." (Ciechanowski, *Mechanical Watch*)
+- "The reader **steps the pallet fork** and **slows the escape-wheel cycle** to understand **how the escapement releases energy in discrete tick-tock impulses**." (Ciechanowski, *Mechanical Watch*)
 - "The reader **predicts** then **reveals** to understand **how surprising the actual data is**." (NYT, *You Draw It*)
 
 **Weak examples — cut these:**
@@ -186,6 +185,6 @@ generated raster, no framework. Craft in the markup is the aesthetic.
 | *An Interactive Introduction to Fourier Transforms* | Jez Swanson | slider + reactive view |
 | *Mechanical Watch* | Bartosz Ciechanowski | exploded diagram, layer toggle |
 | *Introduction to A** | Red Blob Games | step-through, auto-running simulation |
-| *Load Balancing* | Sam Rose | auto-running simulation, predict-then-reveal |
+| *Load Balancing* | Sam Rose | auto-running simulation, side-by-side algorithm comparison |
 
 Read the markup. The pattern is the teaching.
